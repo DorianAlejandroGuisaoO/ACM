@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ACM - Demo Frontend</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <strong>Automatic Instagram CM</strong>
+      </div>
+
+      <div class="sidebar-section">
+        <h4>Respuestas recientes <span class="hint">?</span></h4>
+        <div id="threads" class="threads"></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div id="selectedTitle" class="selected-title">Selecciona un mensaje a la izquierda</div>
+        <label class="auto-label">
+          <input type="checkbox" id="autoReply"> Auto-reply
+        </label>
+      </div>
+
+      <div id="chatWindow" class="chat-window">
+        <div class="empty">Selecciona un mensaje para ver el chat y generar una respuesta.</div>
+      </div>
+
+      <div class="composer">
+        <input id="styleInput" type="text" placeholder="Ingrese el estilo de la respuesta (formal, casual, breve...)" aria-label="Estilo de respuesta">
+        <textarea id="replyInput" rows="3" placeholder="Sugerencia generada o escribe tu respuesta aquí..." aria-label="Respuesta"></textarea>
+        <div class="compose-controls">
+          <button id="generateBtn" class="btn">Generate</button>
+          <button id="sendBtn" class="btn primary">Enviar</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>
