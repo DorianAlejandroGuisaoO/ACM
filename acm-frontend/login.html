@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - ACM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+.welcome-container {
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(135deg, #1e3a8a, #050e22ff, #151c5bff);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        max-width: 900px;
+        width: 100%;
+    }
+
+    /* Lado izquierdo con logo y botones */
+    .left-side {
+        flex: 1;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+</style>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Acceso a ACM</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuario" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <button type="submit" class="btn primary">Ingresar</button>
+      </form>
+      <p class="hint">Usuario: <b>admin</b> | Contraseña: <b>1234</b></p>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+</html>

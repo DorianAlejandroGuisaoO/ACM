@@ -64,3 +64,19 @@ html,body{height:100%;margin:0;background:var(--bg);color:#111}
   .app{padding:10px}
   .chat-window{padding:12px}
 }
+
+/* LOGIN */
+.login-container{
+  display:flex;align-items:center;justify-content:center;
+  height:100vh;background:linear-gradient(135deg,#1a408a,#01021b);
+}
+.login-card{
+  background:white;padding:30px;border-radius:12px;box-shadow:var(--shadow);
+  width:100%;max-width:320px;text-align:center;
+}
+.login-card h2{margin-bottom:20px;font-weight:700;color:#111}
+.login-card input{
+  width:100%;margin-bottom:12px;padding:10px;border:1px solid #ccc;border-radius:8px;font-size:14px;
+}
+.login-card .btn{width:100%}
+.login-card .hint{font-size:12px;color:var(--muted);margin-top:10px}
